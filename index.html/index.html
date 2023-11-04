@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="https://anas-pssword-generator.netlify.app/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="https://anas-pssword-generator.netlify.app/favicon/favicon-32x32.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="https:https://anas-pssword-generator.netlify.app/favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <!-- <link rel="apple-touch-icon" href="https://anas-todo-web.netlify.app/favicon/apple-touch-icon.png"> -->
+    <meta property="og:title" content="Password Generator" />
+    <meta property="og:description" content="Crafted by Anas Jahangir using HTML, CSS, and JavaScript. A password generator is a tool that creates strong and secure passwords, enhancing online security. Customize password length and character types." />
+    <meta property="og:url" content="https://anas-pssword-generator.netlify.app/" />
+    <meta property="og:image" content="https://anas-pssword-generator.netlify.app/img/PasswordGenerator.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+          <span id="result"></span>
+          <button class="btn" onclick="textCopy()" >
+            <i class="far fa-clipboard"></i>
+          </button>
+        </div>
+        <div class="settings">
+          <div class="setting">
+            <label>Password Length</label>
+            <input type="number" id="length" min="4" max="50" value="12" />
+          </div>
+          <div class="setting">
+            <label>Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+          <div class="setting">
+            <label>Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+          <div class="setting">
+            <label>Include numbers</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+          <div class="setting">
+            <label>Include symbols</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+      
+        <button class="btn btn-large" onclick="passGen()">Generate Password</button>
+      </div>
+    </div>
+
+      <footer>
+
+
+        <div class="main-footer">
+            <div>
+                <h1 class="anas">Suffiyan Ahmed </h1>
+            </div>
+
+            <div class="main-icons">
+            </div>
+        </div>
+
+        <div class="p">
+            <p>&copy; 2023 Suffiyan Ahmed . All Rights Reserved. | Designed and Developed by Suffiyan Ahmed </p>
+        </div>
+        
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
